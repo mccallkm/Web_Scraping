@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-us">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Web Scraping</title>
+<!-- Bring in bootstrap stylesheet -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+<!--Add header and button-->
+<header>
+        <div class="text-center">
+            <h1><a href="/" class="mission">Mission To Mars</a></h1>
+            <a href="/scrape" class="btn btn-primary" role="button">Scrape New Data</a>
+        </div>
+    </header>
+
+<h2>Latest Mars News</h2>
+<h4>NASA's Next Mars Mission to Investigate Interior of Red Planet</h4>
+<p>Preparation of NASA's next spacecraft to Mars, InSight, has ramped up this summer,
+    on course for launch next May for Vandenburg Air Force Base in central California --- the first
+    interplanetary launch in history from America's West Coast.
+</p>
+
+<br>
+
+<br>
+
+<!--Featured Image-->
+<div class="row">
+        <div class="panel">
+    <div class="panel-body">
+        <div class="col-md-9">
+        <h3>Featured Image</h3>
+        <img src="featured_image_url" class="featured">
+        </div>
+    </div>
+</div>
+</div>
+
+<!--Current Weather-->
+<div class="panel">
+        <div class="panel-body">
+        <h3>Current Weather on Mars</h3>
+        <p>Sol 2230 (2018-11-14), high -5C/23F, low -72C/-97F, pressure at 8.59 hPa, daylight 06:22-18:39</p>
+        </div>
+    </div>
+
+
+<!--Mars Facts work in progress-->
+<div class="panel">
+        <div class="panel-body">
+        <div class="col-md-3">
+        <h3>Mars Facts</h3>
+        <img src="table.html" class="facts">
+        </div>
+    </div>
+</div>
+
+
+<!--Hemispheres work in progress-->
+<div class="container-fluid"></div>
+<div class="col-md-7"></div>
+<div class="panel panel-default">
+   <div class="panel-body">
+      <h2>Mars Hemispheres</h2>
+      <hr>
+      <div class="row" style="padding-top:50px">
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <img src={{Hemisphere_0[title]}} style="width:100%">
+            <p></p>
+         </div>
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <img src={{Hemisphere_1[title]}} style="width:100%">
+           <p></p>
+         </div>
+      </div>
+      <div class="row" style="padding-bottom:50px" >
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <img src="{{Hemisphere_2[title]}}" style="width:100%">
+            <p></p>
+         </div>
+         <div class="row" style="padding-bottom:50px" >
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <img src="{{Hemisphere_3[title]}}" style="width:100%">
+            <p></p>
+         </div>
+      </div>
+   </div>
+</div>
+</div> 
+</div>
+</div>
+</div>
+<!--End Html code-->
+</body>
+</html>
